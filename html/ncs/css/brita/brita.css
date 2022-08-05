@@ -1,0 +1,130 @@
+
+
+#bn ul{display: flex; justify-content: space-evenly;margin: 0;}
+
+#bnbottom{display: flex; justify-content: space-around;}
+
+/* 공통적으로 틀잡은 부분 */
+h3{text-align: center; margin: 3em;}
+p{font-size: 0.8em;}
+
+.review > ul{display: flex; align-items: flex-end;}
+.review > ul > li{margin-right: 30px;}
+
+/* 상단배너 슬라이드 */
+#bn .swiper-wrapper .bn1{
+    background-size: 100% auto;
+    background-position: center; 
+    background-image: url(http://bakhanbi98.dothome.co.kr/ncs/img/britaproject_img/firstbanner_test.jpg);
+}
+#bn .swiper-wrapper .bn2{ 
+    background-size: 100% auto;
+    background-position: center; 
+    background-image: url(http://bakhanbi98.dothome.co.kr/ncs/img/britaproject_img/secondbanner1_test.jpg);
+}
+#bn .swiper-wrapper .bn3{ 
+    background-size: 100% auto;
+    background-position: center; 
+    background-image: url(http://bakhanbi98.dothome.co.kr/ncs/img/britaproject_img/lastbanner_test.jpg);
+}
+
+#Bsec .swiper-wrapper .ev1{
+    background-size: 100% auto;
+    background-position: center; 
+    background-image: url(http://bakhanbi98.dothome.co.kr/ncs/img/britaproject_img/firstevent_test.jpg);
+}
+#Bsec .swiper-wrapper .ev2{
+    background-size: 100% auto;
+    background-position: center; 
+    background-image: url(http://bakhanbi98.dothome.co.kr/ncs/img/britaproject_img/secondevent_test.png);
+}
+
+#Bsec .swiper-slide{ height:0; padding-top: 42.8%; min-height:800px; background-repeat: no-repeat;}
+
+#Csec, #Dsec, #Esec{ height:100vh; min-height:600px; margin:3em; }
+
+#bn .swiper-bn1, #bn .swiper-bn2, #bn .swiper-bn3{background-size: 55vh;}
+
+/* 배너, 상단 */
+#bn .swiper-slide{
+    background-size:contain;
+    background-repeat: no-repeat;
+    max-height: 700px;  /*데스크탑 전용 기준 700픽셀이상 커지지 마! */
+    height: 100vw;  /*이렇게 하면 끝! 나는 화면 넓이만큼 높이를 줄게 vw = 화면 넓이 단위*/
+}
+
+#container_wr{
+    width: auto !important;
+}
+#bnbottom{
+    width: 100%;
+    height: 5vh;
+}
+#logo > a > img{
+    height: 4em;
+}
+
+/* Asec */
+
+#Asec .britaeffect{
+   
+    
+}
+#Asec .effect .youtubeBox > div{ position: relative; height: 0; padding-top: 56%; }
+#Asec .effect .youtubeBox iframe{ position: absolute; left:0; top:0; width:100%; height:100%;}
+
+/* Bsec */
+
+
+
+/* Csec */
+
+
+/* review */
+.re > a > img{
+    height: 20em;
+    width: 21.2em;
+}
+.re_img img{
+    height: 1.5em;
+    width: 1.5em;
+}
+.re .re_img p{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.re .re_img{ padding: 0.4rem 0;}
+.rt .re{ padding: 0 1rem; overflow: hidden;}
+/* best아닌 start간격 */
+.rt .re_img > img{ margin-left: 0.4rem; }
+
+/* Dsec */
+
+
+/* Esec */
+@media (max-width:1280px){
+    #Bsec .swiper-wrapper .swiper-slide{
+        min-height:none;
+        height:100vw;
+        padding-top:0;
+        background-size: auto 100%;
+    }
+    #bn  .swiper-wrapper .swiper-slide{
+        background-size:auto 100%;
+        
+        max-height: none;  /*데스크탑 전용 기준 700픽셀이상 커지지 마! */
+        height: 50vw;  /*이렇게 하면 끝! 나는 화면 넓이만큼 높이를 줄게 vw = 화면 넓이 단위*/
+    }
+}
+@media (max-width:992px){
+    #Asec, #Bsec, #Csec, #Dsec, #Esec{ height: auto;}
+}
+
+@media(min-width:768px){
+    #banner .swiper{
+        height: 650px; padding-top: 0;
+    }
+}
+@media(max-width:768px){
+    #banner .ad{background-position: calc(50% - 10vw);}
+}
